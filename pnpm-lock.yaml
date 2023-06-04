@@ -31,6 +31,9 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      shared-ui:
+        specifier: workspace:^
+        version: link:../../packages/shared-ui
     devDependencies:
       '@remix-run/dev':
         specifier: ^1.16.1
@@ -47,6 +50,16 @@ importers:
       eslint:
         specifier: ^8.38.0
         version: 8.38.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
+
+  packages/shared-ui:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+    devDependencies:
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
