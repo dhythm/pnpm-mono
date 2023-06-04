@@ -64,5 +64,9 @@ pnpm add nx -D -w
 
 ```sh
 npx nx <target> <project>
+
 npx nx build shared-ui
+npx nx dev my-remix-app
+npx nx run-many --target=build --all
+npx nx run-many --target=build --projects=my-remix-app,shared-ui
 ```
