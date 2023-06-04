@@ -9,5 +9,27 @@
         ]
       }
     }
+  },
+  "namedInputs": {
+    "noMarkdown": [
+      "!{projectRoot}/**/*.md"
+    ]
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": [
+        "noMarkdown",
+        "^noMarkdown"
+      ],
+      "dependOn": [
+        "^build"
+      ]
+    },
+    "test": {
+      "inputs": [
+        "noMarkdown",
+        "^noMarkdown"
+      ]
+    }
   }
 }

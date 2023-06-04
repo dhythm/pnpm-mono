@@ -70,3 +70,9 @@ npx nx dev my-remix-app
 npx nx run-many --target=build --all
 npx nx run-many --target=build --projects=my-remix-app,shared-ui
 ```
+
+## Running just what changed
+
+```sh
+npx nx affected:<target>
+```
