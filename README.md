@@ -53,3 +53,16 @@ pnpm --filter shared-ui build
 ```sh
 pnpm add shared-ui --filter my-remix-app --workspace
 ```
+
+## Installing Nx
+
+```sh
+pnpm add nx -D -w
+```
+
+## Running tasks with Nx
+
+```sh
+npx nx <target> <project>
+npx nx build shared-ui
+```
